@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desigualdades de gênero, raça, renda e orientação sexual no Brasil, à luz das ODS 5 e 10.">
+    <title>Início | Além dos Estereótipos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagens/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="inicio">
+    <a href="#conteudo" class="skip">Pular para o conteúdo</a>
+
+    <header class="top">
+        <a href="index.html" class="brand"><img src="imagens/logo.png" alt="" width="30" height="30">Além dos Estereótipos</a>
+        <button type="button" class="menu-btn" aria-controls="menu" aria-expanded="false" hidden><img src="imagens/icon-menu.svg" alt="" width="22" height="22">Menu</button>
+        <nav id="menu" aria-label="Principal"><a href="index.html" aria-current="page">Início</a><a href="ods5.html">ODS 5</a><a href="ods10.html">ODS 10</a><a href="lgbt.html">LGBTQIA+</a><a href="referencias.html">Referências</a></nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero">
+            <p class="kicker">Trabalho escolar · Agenda 2030 da ONU</p>
+            <h1>Gênero, raça, renda e orientação sexual: no Brasil, as desigualdades se somam.</h1>
+            <p class="lead">Este site reúne dados oficiais, leis, propostas e pessoas de referência sobre dois Objetivos de Desenvolvimento Sustentável: a igualdade de gênero (ODS 5) e a redução das desigualdades (ODS 10).</p>
+        </section>
+
+        <section>
+            <h2><span class="num">01</span>Explore o trabalho</h2>
+            <div class="paginas">
+                <a class="pg o5b" href="ods5.html"><small>ODS 5</small><h3>Igualdade de gênero</h3><p>Diferença salarial entre mulheres e homens, leis de proteção às mulheres e propostas do grupo.</p><span>Abrir página →</span></a>
+                <a class="pg o10b" href="ods10.html"><small>ODS 10</small><h3>Redução das desigualdades</h3><p>Desigualdade de renda e de trabalho entre pessoas brancas e negras, e o que a ODS 10 pede.</p><span>Abrir página →</span></a>
+                <a class="pg lgb" href="lgbt.html"><small>ODS 5 e ODS 10</small><h3>Movimentos LGBTQIA+</h3><p>Violência, conquistas na Justiça, história do movimento e quem faz parte dele.</p><span>Abrir página →</span></a>
+                <a class="pg" href="referencias.html"><small>ABNT</small><h3>Referências</h3><p>Todas as fontes citadas no site, em ordem alfabética.</p><span>Abrir página →</span></a>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">02</span>Por que os temas andam juntos</h2>
+            <div class="texto">
+                <p>A ODS 5 busca alcançar a igualdade de gênero e empoderar todas as mulheres e meninas. A ODS 10 busca reduzir a desigualdade dentro dos países e entre eles (ORGANIZAÇÃO DAS NAÇÕES UNIDAS, 2015). As páginas da ONU Brasil detalham cada objetivo e suas metas (ONU BRASIL, [s.d.]a; [s.d.]b).</p>
+                <p>Na vida real, as desigualdades se cruzam. O conceito de interseccionalidade, formulado por Crenshaw (1989), descreve como gênero, raça e classe se combinam e produzem desvantagens diferentes para cada grupo. Neste trabalho, incluímos também a orientação sexual e a identidade de gênero: uma mulher trans negra, por exemplo, enfrenta barreiras que a média geral dos dados não mostra.</p>
+                <p>No Brasil, esse debate ganhou público amplo com autoras como Djamila Ribeiro, que discute como o lugar social de cada pessoa influencia o que ela vive e o que consegue dizer (RIBEIRO, 2017). O Ipea também reúne indicadores e análises sobre a ODS 5 no país (INSTITUTO DE PESQUISA ECONÔMICA APLICADA, [s.d.]).</p>
+            </div>
+        </section>
+
+        <section id="simulador">
+            <h2><span class="num">03</span>Calculadora de alcance</h2>
+            <p class="intro">Simulação com valores públicos reais de 2026. Mova os controles para ver quantas mulheres e famílias um orçamento poderia alcançar.</p>
+            <div class="controles">
+                <div class="ctl"><label for="slider-orcamento"><span>Investimento anual</span><output id="val-orcamento"></output></label>
+                    <input type="range" id="slider-orcamento" min="30000" max="1000000" step="10000" value="150000"></div>
+                <div class="ctl"><label for="slider-voluntarios"><span>Voluntárias e voluntários</span><output id="val-voluntarios"></output></label>
+                    <input type="range" id="slider-voluntarios" min="0" max="800" step="10" value="120"></div>
+                <div class="ctl"><label for="slider-horas"><span>Horas por voluntário, por mês</span><output id="val-horas"></output></label>
+                    <input type="range" id="slider-horas" min="2" max="40" step="2" value="8"></div>
+                <div class="ctl"><label for="slider-divisao"><span>Parte do orçamento para a ODS 5</span><output id="val-divisao"></output></label>
+                    <input type="range" id="slider-divisao" min="0" max="100" step="10" value="50"></div>
+            </div>
+            <div class="stats tres" aria-live="polite">
+                <div><b id="res-mulheres">0</b><p>mulheres com bolsa de formação (ODS 5)</p></div>
+                <div><b id="res-familias">0</b><p>famílias com complemento de renda por um ano (ODS 10)</p></div>
+                <div><b id="res-voluntariado">R$ 0</b><p>valor estimado do trabalho voluntário</p></div>
+            </div>
+            <div class="texto metodo">
+                <h3>Como o cálculo funciona</h3>
+                <p><strong>Dados reais usados:</strong> o benefício médio do Bolsa Família foi de R$ 677,66 por família em junho de 2026 (CAIXA..., 2026). O salário mínimo de 2026 é R$ 1.621, valor obtido a partir de R$ 810,50, que é meio salário mínimo (BOLSA..., 2026).</p>
+                <p><strong>Hipóteses do grupo:</strong> cada mulher recebe uma bolsa de um salário mínimo por mês durante 6 meses; cada família recebe um complemento igual ao benefício médio do Bolsa Família por 12 meses; cada hora de voluntariado vale o salário mínimo dividido por 220 horas, a jornada mensal de referência.</p>
+                <p><strong>Fórmulas:</strong> orçamento total = investimento + valor do voluntariado. Mulheres = parte da ODS 5 ÷ (R$ 1.621 × 6). Famílias = parte da ODS 10 ÷ (R$ 677,66 × 12).</p>
+                <p class="nota">É uma simulação, não uma previsão: ignora custos de administração, e as hipóteses acima são escolhas deste trabalho.</p>
+            </div>
+        </section>
+
+        <section id="glossario">
+            <h2><span class="num">04</span>Glossário</h2>
+            <p class="intro">Termos ligados à identidade de gênero e à orientação sexual estão na página <a href="lgbt.html#glossario-lgbt">Movimentos LGBTQIA+</a>.</p>
+            <dl class="gloss">
+                <dt>Agenda 2030</dt><dd>Plano de ação da ONU, adotado em 2015, com 17 Objetivos de Desenvolvimento Sustentável e 169 metas (ORGANIZAÇÃO DAS NAÇÕES UNIDAS, 2015).</dd>
+                <dt>Equidade</dt><dd>Tratar de forma justa quem parte de condições diferentes, dando a cada pessoa o que ela precisa para ter oportunidades iguais. Difere da igualdade formal, que trata todos do mesmo jeito.</dd>
+                <dt>Teto de vidro</dt><dd>Barreira invisível que impede mulheres qualificadas de chegar aos cargos mais altos das organizações.</dd>
+                <dt>Trabalho de cuidado</dt><dd>Tarefas domésticas e de cuidado com crianças, idosos e doentes, em geral não remuneradas e feitas em maior parte por mulheres. A meta 5.4 pede que sejam reconhecidas e valorizadas (ORGANIZAÇÃO DAS NAÇÕES UNIDAS, 2015).</dd>
+            </dl>
+        </section>
+
+        <section id="mural">
+            <h2><span class="num">05</span>Mural de mensagens</h2>
+            <p class="intro">Deixe uma mensagem. Ela fica salva apenas neste navegador.</p>
+            <form id="form-mural" novalidate>
+                <label for="autor-msg">Nome</label>
+                <input type="text" id="autor-msg" maxlength="50" autocomplete="name">
+                <label for="texto-msg">Mensagem</label>
+                <textarea id="texto-msg" rows="3" maxlength="240"></textarea>
+                <div class="linha"><span id="erro-msg" role="alert"></span><span id="contador">0/240</span></div>
+                <button type="submit" class="btn">Publicar</button>
+            </form>
+            <div id="mural-feed" class="mural"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabalho escolar sobre as ODS 5 e 10 da Agenda 2030 da ONU.</p>
+        <p>As citações entre parênteses, como (BRASIL, 2023), remetem à página <a href="referencias.html">Referências</a>.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

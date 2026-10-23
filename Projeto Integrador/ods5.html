@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dados, leis e propostas sobre igualdade de gênero no Brasil.">
+    <title>ODS 5: Igualdade de gênero | Além dos Estereótipos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagens/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="ods5">
+    <a href="#conteudo" class="skip">Pular para o conteúdo</a>
+
+    <header class="top">
+        <a href="index.html" class="brand"><img src="imagens/logo.png" alt="" width="30" height="30">Além dos Estereótipos</a>
+        <button type="button" class="menu-btn" aria-controls="menu" aria-expanded="false" hidden><img src="imagens/icon-menu.svg" alt="" width="22" height="22">Menu</button>
+        <nav id="menu" aria-label="Principal"><a href="index.html">Início</a><a href="ods5.html" aria-current="page">ODS 5</a><a href="ods10.html">ODS 10</a><a href="lgbt.html">LGBTQIA+</a><a href="referencias.html">Referências</a></nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero">
+            <p class="kicker"><span class="o5">ODS 5</span> · Igualdade de gênero</p>
+            <h1>Mulheres ganham 21,3% menos que homens no Brasil. A diferença não diminuiu desde a lei de 2023.</h1>
+            <p class="lead">A ODS 5 pede o fim de todas as formas de discriminação contra todas as mulheres e meninas (ONU BRASIL, [s.d.]a). Nesta página: o que os dados mostram, as leis que existem e o que o grupo propõe.</p>
+            <p class="nota">Dado do 5º Relatório de Transparência Salarial (BRASIL, 2026).</p>
+        </section>
+
+        <section>
+            <h2><span class="num">01</span>O que os números mostram</h2>
+            <p class="intro">O relatório reúne dados da Rais de cerca de 53,5 mil estabelecimentos com 100 ou mais empregados. Ele não representa todo o mercado de trabalho.</p>
+            <div class="stats tres">
+                <div><b>14,3%</b><p>é a diferença no salário mediano de contratação, contra 13,7% em 2023.</p></div>
+                <div><b>+29%</b><p>mais mulheres negras empregadas desde 2023: de 3,2 para 4,2 milhões.</p></div>
+                <div><b>+11%</b><p>mais mulheres com emprego formal nessas empresas: de 7,2 para 8 milhões.</p></div>
+            </div>
+            <p class="nota">Fonte: BRASIL (2026), relatório previsto na Lei nº 14.611/2023 (BRASIL, 2023). Números conferidos em EMPREGO... (2026), DESIGUALDADE... (2026), MULHERES... (2026) e PAY... (2026).</p>
+            <aside class="aviso"><strong>Todas as mulheres.</strong> Neste trabalho, entendemos que "todas as mulheres e meninas" inclui mulheres trans e travestis, além de lésbicas e bissexuais. A violência contra esses grupos está na página <a href="lgbt.html">Movimentos LGBTQIA+</a>.</aside>
+        </section>
+
+        <section>
+            <h2><span class="num">02</span>Marcos legais</h2>
+            <p class="intro">Três normas que sustentam a igualdade de gênero no Brasil.</p>
+            <div class="leis tres">
+                <div><b>1988</b><h3>Constituição Federal</h3><p>Em seu artigo 5º, inciso I, estabelece que homens e mulheres são iguais em direitos e obrigações (BRASIL, 1988).</p></div>
+                <div><b>2006</b><h3>Lei Maria da Penha</h3><p>A Lei nº 11.340 criou mecanismos para coibir a violência doméstica e familiar contra a mulher (BRASIL, 2006).</p></div>
+                <div><b>2023</b><h3>Lei da Igualdade Salarial</h3><p>A Lei nº 14.611 trata da igualdade salarial e de critérios remuneratórios entre mulheres e homens. Dela vêm os relatórios de transparência (BRASIL, 2023).</p></div>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">03</span>Mito ou fato?</h2>
+            <p class="intro">Escolha um lado em cada afirmação e veja o que os dados dizem.</p>
+            <div id="lista-mitos" class="mitos"></div>
+        </section>
+
+        <section>
+            <h2><span class="num">04</span>Propostas do grupo</h2>
+            <p class="intro">Duas ideias de projeto ligadas a metas da ODS 5. São propostas fictícias criadas para este trabalho.</p>
+            <div id="lista-propostas" class="propostas"></div>
+        </section>
+
+        <section>
+            <h2><span class="num">05</span>Mulheres de referência</h2>
+            <p class="intro">Duas brasileiras cuja trajetória marcou a luta pelos direitos das mulheres.</p>
+            <div id="lista-icones" class="lista"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabalho escolar sobre as ODS 5 e 10 da Agenda 2030 da ONU.</p>
+        <p>As citações entre parênteses, como (BRASIL, 2023), remetem à página <a href="referencias.html">Referências</a>.</p>
+    </footer>
+
+    <dialog id="modal" aria-labelledby="modal-titulo">
+        <h3 id="modal-titulo"></h3>
+        <p id="modal-sub" class="nota"></p>
+        <div id="modal-corpo"></div>
+        <button type="button" id="modal-fechar" class="btn">Fechar</button>
+    </dialog>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

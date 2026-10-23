@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desigualdade racial de renda e trabalho no Brasil e as metas da ODS 10.">
+    <title>ODS 10: Redução das desigualdades | Além dos Estereótipos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagens/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="ods10">
+    <a href="#conteudo" class="skip">Pular para o conteúdo</a>
+
+    <header class="top">
+        <a href="index.html" class="brand"><img src="imagens/logo.png" alt="" width="30" height="30">Além dos Estereótipos</a>
+        <button type="button" class="menu-btn" aria-controls="menu" aria-expanded="false" hidden><img src="imagens/icon-menu.svg" alt="" width="22" height="22">Menu</button>
+        <nav id="menu" aria-label="Principal"><a href="index.html">Início</a><a href="ods5.html">ODS 5</a><a href="ods10.html" aria-current="page">ODS 10</a><a href="lgbt.html">LGBTQIA+</a><a href="referencias.html">Referências</a></nav>
+    </header>
+
+    <main id="conteudo">
+        <section class="hero">
+            <p class="kicker"><span class="o10">ODS 10</span> · Redução das desigualdades</p>
+            <h1>No Brasil, um trabalhador branco recebe em média R$ 4.153 por mês. Um trabalhador preto, R$ 2.403.</h1>
+            <p class="lead">A ODS 10 pede a inclusão social, econômica e política de todas as pessoas. Nesta página: o tamanho da desigualdade racial no trabalho, o que a ODS 10 pede e as propostas do grupo.</p>
+            <p class="nota">Dados da PNAD Contínua do IBGE, 4º trimestre de 2024, citados em NOS OMBROS... (2025).</p>
+        </section>
+
+        <section>
+            <h2><span class="num">01</span>O que os números mostram</h2>
+            <p class="intro">O rendimento médio mensal no país era de R$ 3.215. Trabalhadores brancos ficaram acima dessa média; pretos e pardos, abaixo.</p>
+            <div class="stats tres">
+                <div><b>R$ 2.485</b><p>é o rendimento médio mensal de trabalhadores pardos.</p></div>
+                <div><b>43,5%</b><p>dos trabalhadores pardos estão na informalidade. Entre pretos são 41,9%, e entre brancos, 32,6%.</p></div>
+                <div><b>7,5%</b><p>é a taxa de desemprego de pessoas pretas; a de pardas é 7%, ambas acima da média nacional.</p></div>
+            </div>
+            <p class="nota">Fonte: NOS OMBROS... (2025), com base na PNAD Contínua do IBGE.</p>
+        </section>
+
+        <section>
+            <h2><span class="num">02</span>O que a ODS 10 pede</h2>
+            <div class="texto">
+                <p>Duas metas da ODS 10 ajudam a entender este trabalho. A meta 10.2 pede a inclusão social, econômica e política de todas as pessoas, independentemente da idade, gênero, deficiência, raça, etnia, origem, religião, condição econômica ou outra. A meta 10.3 pede igualdade de oportunidades e menos desigualdade de resultados, inclusive com a eliminação de leis, políticas e práticas discriminatórias (ORGANIZAÇÃO DAS NAÇÕES UNIDAS, 2015; ONU BRASIL, [s.d.]b).</p>
+                <p>A meta 10.2 cita o gênero, mas não fala em orientação sexual nem em identidade de gênero. Neste trabalho, entendemos que elas cabem em "outra condição". As decisões da Justiça brasileira que garantiram direitos à população LGBTQIA+ são exemplos da meta 10.3 e estão na página <a href="lgbt.html#linha-do-tempo">Movimentos LGBTQIA+</a>.</p>
+                <p>O emprego formal de mulheres negras cresceu nos últimos anos, como mostra a página <a href="ods5.html">ODS 5</a>. Os números desta página mostram, porém, que ter mais emprego não basta: a informalidade e a renda mais baixa continuam concentradas na população negra.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">03</span>Marco legal</h2>
+            <div class="leis um">
+                <div><b>2010</b><h3>Estatuto da Igualdade Racial</h3><p>A Lei nº 12.288 busca garantir à população negra a igualdade de oportunidades, a defesa dos direitos étnicos e o combate à discriminação (BRASIL, 2010).</p></div>
+            </div>
+        </section>
+
+        <section>
+            <h2><span class="num">04</span>Propostas do grupo</h2>
+            <p class="intro">Duas ideias de projeto ligadas a metas da ODS 10. São propostas fictícias criadas para este trabalho.</p>
+            <div id="lista-propostas" class="propostas"></div>
+        </section>
+
+        <section>
+            <h2><span class="num">05</span>Pessoas de referência</h2>
+            <p class="intro">Duas brasileiras que levaram o debate sobre racismo e direitos dos povos originários para o centro da política e da cultura.</p>
+            <div id="lista-icones" class="lista"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Trabalho escolar sobre as ODS 5 e 10 da Agenda 2030 da ONU.</p>
+        <p>As citações entre parênteses, como (BRASIL, 2023), remetem à página <a href="referencias.html">Referências</a>.</p>
+    </footer>
+
+    <dialog id="modal" aria-labelledby="modal-titulo">
+        <h3 id="modal-titulo"></h3>
+        <p id="modal-sub" class="nota"></p>
+        <div id="modal-corpo"></div>
+        <button type="button" id="modal-fechar" class="btn">Fechar</button>
+    </dialog>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
